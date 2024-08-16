@@ -1,19 +1,21 @@
-@import "base";
+@import "fonts";
+@import "reset";
+@import "variables";
 
 .container {
-  position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 150px;
 }
 
-.flex {
+.flex-align-center {
   display: flex;
   align-items: center;
 }
 
 .header {
+  @extend .flex-align-center;
   width: 100%;
   height: 70px;
   font-family: "Nunito Sans", sans-serif;
@@ -25,21 +27,21 @@
   &-logo {
     width: 8%;
     height: 80%;
-    img {
-      margin-top: 10px;
-      height: 80%;
-    }
+  }
+  .logo-img {
+    margin-top: 10px;
+    height: 80%;
   }
 }
 
 .link {
   &-list {
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     gap: 30px;
   }
   &-item {
-    color: black;
+    color: $text-black;
   }
 }
 
@@ -54,12 +56,12 @@
 .info {
   &-title {
     font-size: 20px;
-    color: white;
+    color: $text-light;
     font-family: "Nunito", sans-serif;
   }
   &-big-title {
     font-size: 60px;
-    color: white;
+    color: $text-light;
     font-family: "Montserrat", sans-serif;
   }
 }
@@ -67,11 +69,11 @@
 .card {
   width: 450px;
   height: 450px;
-  border: 1px #dee2e6 solid;
+  border: 1px $card-border-color solid;
   text-align: left;
   transition: 0.5s;
   cursor: pointer;
-  img {
+  .card-img {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -94,6 +96,7 @@
   &-section {
     text-align: center;
     height: 80vh;
+    margin-bottom: 50px;
     &-title {
       font-size: 15px;
       font-family: "Nunito", sans-serif;
@@ -113,10 +116,10 @@
 }
 
 .footer {
-  background-color: #2c86ff;
-  color: white;
+  background-color: $footer-color;
+  color: $text-light;
   width: 100%;
-  height: 63vh;
+  padding-bottom: 20px;
   font-family: "Nunito", sans-serif;
   &-name {
     font-size: 35px;
