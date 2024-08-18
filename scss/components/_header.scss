@@ -1,0 +1,22 @@
+.header {
+  @extend .flex-align-center;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  &-inner {
+    height: 70px;
+    @extend .flex-align-center;
+  }
+  &-logo {
+    width: 8%;
+    height: 80%;
+  }
+  .logo-img {
+    margin-top: 10px;
+    height: 80%;
+  }
+}

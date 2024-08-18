@@ -99,20 +99,27 @@ a {
   padding: 0 150px;
 }
 
-.flex-align-center, .header {
+.flex-align-center, .header-inner, .header {
   display: flex;
   align-items: center;
 }
 
+.flex-col, .info-big-title, .footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   width: 100%;
-  height: 70px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   background-color: white;
   position: sticky;
   top: 0;
   z-index: 99;
+}
+.header-inner {
+  height: 70px;
 }
 .header-logo {
   width: 8%;
@@ -123,40 +130,45 @@ a {
   height: 80%;
 }
 
-.link-list {
-  margin-left: 20px;
-  display: flex;
-  gap: 30px;
-}
-.link-item {
-  color: black;
-}
-
-.banner {
-  width: 100%;
-  height: 120vh;
-  background-image: url("../assets/images/Recruitment_Sector_Logistics.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.info-title {
-  font-size: 20px;
+.footer {
+  background-color: #2c86ff;
   color: white;
+  width: 100%;
+  padding-bottom: 20px;
   font-family: "Nunito", sans-serif;
 }
-.info-big-title {
-  font-size: 60px;
-  color: white;
+.footer-left {
+  float: left;
+}
+.footer-name {
+  font-size: 35px;
+  padding-top: 50px;
+  font-weight: 600;
+}
+.footer-info {
+  font-size: 20px;
+  padding-top: 10px;
   font-family: "Montserrat", sans-serif;
+  width: 450px;
+}
+.footer-contact {
+  font-size: 20px;
+  gap: 20px;
+}
+.footer-contact-title {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 20px;
 }
 
 .card {
   width: 450px;
-  height: 450px;
+  height: calc(450 / 1920 * 100vw);
   border: 1px #dee2e6 solid;
   text-align: left;
-  transition: 0.5s;
+  transition-duration: 500ms;
+  transition-property: scale;
+  transition-timing-function: ease-in-out;
   cursor: pointer;
 }
 .card .card-img {
@@ -170,18 +182,18 @@ a {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   padding-left: 20px;
-  font-size: 20px;
+  font-size: calc(20 / 1920 * 100vw);
 }
 .card-info {
   font-family: serif;
   color: #7f7f87;
-  font-size: 20px;
+  font-size: calc(20 / 1920 * 100vw);
   padding-left: 20px;
 }
 .card-section {
   text-align: center;
-  height: 80vh;
-  margin-bottom: 50px;
+  height: 35.3535353535vw;
+  margin: 50px 0;
 }
 .card-section-title {
   font-size: 15px;
@@ -199,29 +211,35 @@ a {
   gap: 20px;
 }
 
-.footer {
-  background-color: #2c86ff;
-  color: white;
+.link-list {
+  margin-left: 20px;
+  display: flex;
+  gap: 30px;
+}
+.link-item {
+  color: black;
+}
+
+.banner {
   width: 100%;
-  padding-bottom: 20px;
+  height: calc(1200 / 1920 * 100vw);
+  background-image: url("../assets/images/Recruitment_Sector_Logistics.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.banner-inner {
+  padding-top: 100px;
+}
+
+.info-title {
+  font-size: 20px;
+  color: white;
   font-family: "Nunito", sans-serif;
 }
-.footer-name {
-  font-size: 35px;
-  padding-top: 50px;
-  font-weight: 600;
-}
-.footer-info {
-  font-size: 20px;
-  padding-top: 10px;
+.info-big-title {
+  font-size: 60px;
+  color: white;
   font-family: "Montserrat", sans-serif;
-  width: 450px;
 }
-.footer-contact {
-  font-size: 20px;
-}
-.footer-contact-title {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  font-size: 20px;
-}
+
+/*# sourceMappingURL=style.css.map */

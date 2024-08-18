@@ -1,0 +1,35 @@
+.link {
+  &-list {
+    margin-left: 20px;
+    display: flex;
+    gap: 30px;
+  }
+  &-item {
+    color: $text-black;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: responsive-calc(1200);
+  background-image: url("../assets/images/Recruitment_Sector_Logistics.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  &-inner {
+    padding-top: 100px;
+  }
+}
+
+.info {
+  &-title {
+    font-size: 20px;
+    color: $text-light;
+    font-family: "Nunito", sans-serif;
+  }
+  &-big-title {
+    font-size: 60px;
+    color: $text-light;
+    font-family: "Montserrat", sans-serif;
+    @extend .flex-col;
+  }
+}
