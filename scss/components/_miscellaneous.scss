@@ -16,18 +16,18 @@
   background-size: 100%;
   background-repeat: no-repeat;
   &-inner {
-    padding-top: 100px;
+    padding-top: responsive-calc(120);
   }
 }
 
 .info {
   &-title {
-    font-size: 20px;
+    font-size: responsive-calc(25);
     color: $text-light;
     font-family: "Nunito", sans-serif;
   }
   &-big-title {
-    font-size: 60px;
+    font-size: responsive-calc(65);
     color: $text-light;
     font-family: "Montserrat", sans-serif;
     @extend .flex-col;

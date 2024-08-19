@@ -1,6 +1,6 @@
 .card {
-  width: 450px;
-  height: responsive-calc(450);
+  width: 400px;
+  height: responsive-calc(600);
   border: 1px $card-border-color solid;
   text-align: left;
   transition-duration: 500ms;
@@ -18,19 +18,20 @@
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     padding-left: 20px;
-    font-size: responsive-calc(20);
+    font-size: responsive-calc(25);
   }
   &-info {
     font-family: serif;
     color: #7f7f87;
-    font-size: responsive-calc(20);
+    font-size: responsive-calc(25);
     padding-left: 20px;
   }
 
   &-section {
     text-align: center;
-    height: calc(700 / 1980 * 100vw);
-    margin: 50px 0;
+    height: responsive-calc(700);
+    margin-top: responsive-calc(90);
+    margin-bottom: responsive-calc(150);
     &-title {
       font-size: 15px;
       font-family: "Nunito", sans-serif;
@@ -45,6 +46,7 @@
   }
   &-list {
     display: flex;
+    justify-content: center;
     gap: 20px;
   }
 }
