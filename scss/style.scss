@@ -4,9 +4,10 @@
 @import "core/variables";
 @import "core/function";
 @import "core/base";
+@import "core/breakpoints";
 
 //components
 @import "components/header";
 @import "components/footer";
 @import "components/card";
-@import "components/miscellaneous";
+@import "components/banner";

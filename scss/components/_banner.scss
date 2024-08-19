@@ -1,14 +1,3 @@
-.link {
-  &-list {
-    margin-left: 20px;
-    display: flex;
-    gap: 30px;
-  }
-  &-item {
-    color: $text-black;
-  }
-}
-
 .banner {
   width: 100%;
   height: responsive-calc(1200);
@@ -25,11 +14,17 @@
     font-size: responsive-calc(25);
     color: $text-light;
     font-family: "Nunito", sans-serif;
+    @include tablet-breakpoint {
+      font-size: 15px;
+    }
   }
   &-big-title {
     font-size: responsive-calc(65);
     color: $text-light;
     font-family: "Montserrat", sans-serif;
     @extend .flex-col;
+    @include tablet-breakpoint {
+      font-size: 30px;
+    }
   }
 }

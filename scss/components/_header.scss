@@ -12,11 +12,24 @@
     @extend .flex-align-center;
   }
   &-logo {
-    width: 8%;
+    width: 20%;
     height: 80%;
   }
   .logo-img {
     margin-top: 10px;
     height: 80%;
+  }
+}
+
+.link {
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+  &-item {
+    color: $text-black;
+    @include tablet-breakpoint {
+      display: none;
+    }
   }
 }

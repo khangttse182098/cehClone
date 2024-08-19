@@ -1,30 +1,42 @@
 .footer {
   background-color: $footer-color;
   color: $text-light;
-  padding-bottom: responsive-calc(20);
+  padding-bottom: 20px;
   font-family: "Nunito", sans-serif;
   &-left {
     float: left;
   }
   &-name {
     font-size: responsive-calc(40);
-    padding-top: responsive-calc(50);
+    padding-top: 50px;
     font-weight: 600;
+    @include laptop-breakpoint {
+      font-size: 26px;
+    }
   }
   &-info {
     font-size: responsive-calc(20);
     padding-top: responsive-calc(10);
     font-family: "Montserrat", sans-serif;
     width: 450px;
+    @include laptop-breakpoint {
+      font-size: 15px;
+    }
   }
   &-contact {
-    font-size: responsive-calc(22);
     @extend .flex-col;
+    font-size: responsive-calc(22);
     gap: 20px;
+    @include laptop-breakpoint {
+      font-size: 15px;
+    }
     &-title {
       padding-top: responsive-calc(50);
       padding-bottom: responsive-calc(30);
       font-size: responsive-calc(22);
+      @include laptop-breakpoint {
+        font-size: 25px;
+      }
     }
   }
 }

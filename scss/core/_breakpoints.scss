@@ -1,0 +1,10 @@
+@mixin tablet-breakpoint {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop-breakpoint {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
