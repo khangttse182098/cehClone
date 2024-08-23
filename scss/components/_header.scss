@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .header {
   @extend .flex-align-center;
   width: 100%;
@@ -10,6 +14,9 @@
   &-inner {
     height: 70px;
     @extend .flex-align-center;
+    @include tablet-breakpoint {
+      justify-content: space-between;
+    }
   }
   &-logo {
     width: 20%;
@@ -18,6 +25,26 @@
   .logo-img {
     margin-top: 10px;
     height: 80%;
+  }
+  .burger-icon {
+    display: none;
+    cursor: pointer;
+    @include tablet-breakpoint {
+      display: block;
+    }
+  }
+  .toggle {
+    &-menu {
+      margin: 20px 0;
+      text-align: center;
+      transition: 500ms;
+    }
+    &-link {
+      &:hover {
+        background-color: $footer-color;
+        color: $text-light;
+      }
+    }
   }
 }
 
